@@ -1,0 +1,46 @@
+import { Meta, ColorPalette, ColorItem } from "@storybook/blocks";
+import { colors } from ".";
+
+<Meta title="Foundation/Colors" />
+
+<ColorPalette>
+  <ColorItem
+    title="Black & White"
+    colors={{ Black: colors.black, White: colors.white }}
+  />
+  <ColorItem
+    title="Gray Color"
+    colors={{
+      Gray900: colors.gray900,
+      Gray800: colors.gray800,
+      Gray500: colors.gray500,
+      Gray400: colors.gray400,
+      Gray300: colors.gray300,
+      Gray200: colors.gray200,
+    }}
+  />
+  <ColorItem
+    title="Text Color"
+    colors={{
+      Black: colors.black,
+      Gray900: colors.gray900,
+      Gray700: colors.gray700,
+      Gray500: colors.gray500,
+      Gray400: colors.gray400,
+    }}
+  />
+  <ColorItem
+    title="State Color"
+    colors={{
+      Green500: colors.green500,
+      Blue500: colors.blue500,
+      Red500: colors.red500,
+    }}
+  />
+  <ColorItem
+    title="Sub Color"
+    colors={{
+      Purple300: colors.purple300,
+    }}
+  />
+</ColorPalette>
