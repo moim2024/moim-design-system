@@ -6,7 +6,8 @@
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "lib/components/Color/color.css"
   ],
   "scripts": {
     "dev": "vite",
