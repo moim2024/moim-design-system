@@ -22,5 +22,5 @@ const SvgClose = (props: any) => (
       </clipPath>
     </defs>
   </svg>
-);
-export default SvgClose;
+)
+export default SvgClose

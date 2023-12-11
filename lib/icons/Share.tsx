@@ -15,5 +15,5 @@ const SvgShare = (props: any) => (
       clipRule="evenodd"
     />
   </svg>
-);
-export default SvgShare;
+)
+export default SvgShare

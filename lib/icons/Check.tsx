@@ -15,5 +15,5 @@ const SvgCheck = (props: any) => (
       clipRule="evenodd"
     />
   </svg>
-);
-export default SvgCheck;
+)
+export default SvgCheck

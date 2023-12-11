@@ -35,5 +35,5 @@ const SvgAlert = (props: any) => (
       clipRule="evenodd"
     />
   </svg>
-);
-export default SvgAlert;
+)
+export default SvgAlert

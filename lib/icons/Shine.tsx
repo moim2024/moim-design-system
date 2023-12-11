@@ -15,5 +15,5 @@ const SvgShine = (props: any) => (
       clipRule="evenodd"
     />
   </svg>
-);
-export default SvgShine;
+)
+export default SvgShine

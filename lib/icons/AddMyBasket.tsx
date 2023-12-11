@@ -19,5 +19,5 @@ const SvgAddMyBasket = (props: any) => (
       clipRule="evenodd"
     />
   </svg>
-);
-export default SvgAddMyBasket;
+)
+export default SvgAddMyBasket

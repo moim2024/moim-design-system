@@ -20,5 +20,5 @@ const SvgPlus = (props: any) => (
       </clipPath>
     </defs>
   </svg>
-);
-export default SvgPlus;
+)
+export default SvgPlus

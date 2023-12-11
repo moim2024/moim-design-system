@@ -13,5 +13,5 @@ const SvgMore = (props: any) => (
       d="M9 1a1 1 0 1 1-2 0 1 1 0 0 1 2 0M9 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0M9 15a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
     />
   </svg>
-);
-export default SvgMore;
+)
+export default SvgMore

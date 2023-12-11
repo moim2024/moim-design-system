@@ -23,5 +23,5 @@ const SvgGoal = (props: any) => (
       </clipPath>
     </defs>
   </svg>
-);
-export default SvgGoal;
+)
+export default SvgGoal
