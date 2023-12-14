@@ -13,5 +13,3 @@ const preview: Preview = {
 }
 
 export default preview
-
-import '../lib/styles/base/_reset.scss'

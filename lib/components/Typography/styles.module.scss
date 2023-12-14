@@ -1,0 +1,51 @@
+.caption2 {
+  @include caption2;
+}
+
+.caption2strong {
+  @include caption2-strong;
+}
+
+.caption1 {
+  @include caption1;
+}
+
+.caption1strong {
+  @include caption1-strong;
+}
+
+.body1 {
+  @include body1;
+}
+
+.body1strong {
+  @include body1-strong;
+}
+
+.body2 {
+  @include body2;
+}
+
+.body2strong {
+  @include body2-strong;
+}
+
+.subtitle1 {
+  @include subtitle1;
+}
+
+.title3 {
+  @include title3;
+}
+
+.title2 {
+  @include title2;
+}
+
+.title1 {
+  @include title1;
+}
+
+.largetitle {
+  @include large-title;
+}
