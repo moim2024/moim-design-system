@@ -1,51 +1,77 @@
 .caption2 {
-  @include caption2;
+  font-weight: $regular;
+  font-size: $size-100;
+  line-height: $line-height-100;
 }
 
 .caption2strong {
-  @include caption2-strong;
+  font-weight: $semibold;
+  font-size: $size-100;
+  line-height: $line-height-100;
 }
 
 .caption1 {
-  @include caption1;
+  font-weight: $regular;
+  font-size: $size-200;
+  line-height: $line-height-200;
 }
 
 .caption1strong {
-  @include caption1-strong;
+  font-weight: $semibold;
+  font-size: $size-200;
+  line-height: $line-height-200;
 }
 
 .body1 {
-  @include body1;
+  font-weight: $regular;
+  font-size: $size-300;
+  line-height: $line-height-300;
 }
 
 .body1strong {
-  @include body1-strong;
+  font-weight: $semibold;
+  font-size: $size-300;
+  line-height: $line-height-300;
 }
 
 .body2 {
-  @include body2;
+  font-weight: $regular;
+  font-size: $size-400;
+  line-height: $line-height-400;
 }
 
 .body2strong {
-  @include body2-strong;
+  font-weight: $semibold;
+  font-size: $size-400;
+  line-height: $line-height-400;
 }
 
 .subtitle1 {
-  @include subtitle1;
+  font-weight: $semibold;
+  font-size: $size-500;
+  line-height: $line-height-500;
 }
 
 .title3 {
-  @include title3;
+  font-weight: $semibold;
+  font-size: $size-600;
+  line-height: $line-height-600;
 }
 
 .title2 {
-  @include title2;
+  font-weight: $semibold;
+  font-size: $size-700;
+  line-height: $line-height-700;
 }
 
 .title1 {
-  @include title1;
+  font-weight: $semibold;
+  font-size: $size-800;
+  line-height: $line-height-800;
 }
 
 .largetitle {
-  @include large-title;
+  font-weight: $semibold;
+  font-size: $size-900;
+  line-height: $line-height-900;
 }
