@@ -12,12 +12,12 @@ export default meta
 
 export const Primary: StoryObj<typeof meta> = {
   args: {
-    children: 'Text',
+    text: 'Text',
   },
 }
 export const SecondaryFill: StoryObj<typeof meta> = {
   args: {
-    children: 'Text',
+    text: 'Text',
     variant: 'secondary',
     fill: true,
   },
@@ -26,22 +26,10 @@ export const SecondaryFill: StoryObj<typeof meta> = {
 export const Icon: StoryFn<typeof meta> = () => {
   return (
     <>
-      <Button>
-        <Menu />
-        메뉴
-      </Button>
-      <Button variant="secondary" size="lg">
-        <Write />
-        수정
-      </Button>
-      <Button disabled>
-        <Write />
-        수정
-      </Button>
-      <Button fill>
-        <Share />
-        프로필 링크 복사
-      </Button>
+      <Button text='메뉴' icon={<Menu />} />
+      <Button text="수정" variant="secondary" size="lg" icon={<Write />} />
+      <Button text="수정"icon={<Write />} disabled />
+      <Button text='프로필 링크 복사' icon={<Share />} fill />
     </>
   )
 }

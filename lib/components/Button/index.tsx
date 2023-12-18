@@ -1,29 +1,35 @@
-import styles from './styles.module.css'
+import classNames from 'classnames/bind'
+import styles from './styles.module.scss'
+import Typography from '../Typography'
+
+const cx = classNames.bind(styles)
 
 export interface ButtonProps {
-  children?: React.ReactNode
+  text: string
   variant?: 'primary' | 'secondary'
   size?: 'sm' | 'lg'
-  disabled?: boolean
   fill?: boolean
+  disabled?: boolean
+  icon?: React.ReactNode
   onClick?: (e?: React.MouseEvent<HTMLButtonElement>) => void
 }
 
 function Button({
-  children,
+  text,
   variant = 'primary',
   size = 'sm',
-  disabled,
   fill = false,
+  disabled,
+  icon,
   onClick,
 }: ButtonProps) {
+  const className = cx(variant, size, { fill })
+  const typographyVariant = size === 'sm' ? 'body1strong' : 'body2strong'
+
   return (
-    <button
-      className={`${styles[variant]} ${styles[size]} ${fill && styles.fill}`}
-      disabled={disabled}
-      onClick={onClick}
-    >
-      {children}
+    <button className={className} disabled={disabled} onClick={onClick}>
+      <Typography text={text} variant={typographyVariant} />
+      {icon}
     </button>
   )
 }
