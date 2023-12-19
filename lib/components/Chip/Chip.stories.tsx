@@ -11,14 +11,14 @@ export default meta
 
 export const Contain: StoryObj<typeof meta> = {
   args: {
-    children: 'Text',
+    text: 'Text',
     onDelete: undefined,
   },
 }
 
 export const OutlineGray: StoryObj<typeof meta> = {
   args: {
-    children: 'Text',
+    text: 'Text',
     variant: 'outline',
     onDelete: undefined,
   },
@@ -26,7 +26,7 @@ export const OutlineGray: StoryObj<typeof meta> = {
 
 export const OutlineBlack: StoryObj<typeof meta> = {
   args: {
-    children: 'Text',
+    text: 'Text',
     variant: 'outline',
     colorScheme: 'black',
     onDelete: undefined,
@@ -42,9 +42,7 @@ export const Icon: StoryFn<typeof meta> = () => {
   }
   return (
     <>
-      <Chip onClick={handleClick} onDelete={handleDelete}>
-        Text
-      </Chip>
+      <Chip text="text" onClick={handleClick} onDelete={handleDelete} />
     </>
   )
 }

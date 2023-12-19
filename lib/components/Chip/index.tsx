@@ -1,8 +1,12 @@
-import styles from './styles.module.css'
+import classNames from 'classnames/bind'
+import styles from './styles.module.scss'
+import Typography from '../Typography'
 import { CloseCircle } from '../../icons'
 
+const cx = classNames.bind(styles)
+
 export interface ChipProps {
-  children: React.ReactNode
+  text: string
   variant?: 'contain' | 'outline'
   colorScheme?: 'gray-300' | 'black'
   onClick?: (e?: React.MouseEvent) => void
@@ -10,33 +14,27 @@ export interface ChipProps {
 }
 
 function Chip({
-  children,
+  text,
   variant = 'contain',
   colorScheme = 'gray-300',
   onClick,
-  onDelete
+  onDelete,
 }: ChipProps) {
   const handleDeleteIconClick = (e: React.MouseEvent) => {
     e.stopPropagation()
     if (onDelete) {
-      onDelete(e)
+      onDelete()
     }
   }
 
-  let deleteIcon = null
-  if (onDelete) {
-    deleteIcon = <CloseCircle onClick={handleDeleteIconClick} />
-  }
   return (
-    <div
-      className={`${styles.chip} ${styles[variant]} ${styles[colorScheme]} ${
-        onDelete && styles.icon
-      }`}
+    <button
+      className={cx(variant, colorScheme, { icon: onDelete })}
       onClick={onClick}
     >
-      {children}
-      {deleteIcon}
-    </div>
+      <Typography text={text} variant={'body1strong'} />
+      {onDelete && <CloseCircle onClick={handleDeleteIconClick} />}
+    </button>
   )
 }
 
