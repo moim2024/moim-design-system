@@ -6,6 +6,7 @@
   "plugins": ["stylelint-scss"],
   "rules": {
     "color-named": "never",
+    "no-descending-specificity": null,
     "scss/load-no-partial-leading-underscore": null
   }
 }
