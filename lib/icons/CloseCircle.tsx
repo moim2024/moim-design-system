@@ -14,5 +14,5 @@ const SvgCloseCircle = (props: any) => (
       d="M11.345 4.66a.53.53 0 0 0-.749 0L8 7.251 5.404 4.655a.53.53 0 1 0-.749.749L7.251 8l-2.596 2.596a.53.53 0 0 0 .749.749L8 8.749l2.596 2.596a.53.53 0 0 0 .749-.749L8.749 8l2.596-2.596a.532.532 0 0 0 0-.744"
     />
   </svg>
-);
-export default SvgCloseCircle;
+)
+export default SvgCloseCircle

@@ -15,5 +15,5 @@ const SvgWrite = (props: any) => (
       clipRule="evenodd"
     />
   </svg>
-);
-export default SvgWrite;
+)
+export default SvgWrite

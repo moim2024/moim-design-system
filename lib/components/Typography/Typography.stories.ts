@@ -1,18 +1,18 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import Typography from ".";
+import type { Meta, StoryObj } from '@storybook/react'
+import Typography from '.'
 
 const meta = {
-  title: "Foundation/Typography",
+  title: 'Foundation/Typography',
   component: Typography,
-  tags: ["autodocs"],
-} satisfies Meta<typeof Typography>;
+  tags: ['autodocs'],
+} satisfies Meta<typeof Typography>
 
-export default meta;
-type Story = StoryObj<typeof meta>;
+export default meta
+type Story = StoryObj<typeof meta>
 
 export const Primary: Story = {
   args: {
-    text: "Hello World",
-    variant: "caption2",
+    text: 'Hello World',
+    variant: 'caption2',
   },
-};
+}

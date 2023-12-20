@@ -15,5 +15,5 @@ const SvgEdit = (props: any) => (
       clipRule="evenodd"
     />
   </svg>
-);
-export default SvgEdit;
+)
+export default SvgEdit

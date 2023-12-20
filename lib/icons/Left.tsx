@@ -15,5 +15,5 @@ const SvgLeft = (props: any) => (
       clipRule="evenodd"
     />
   </svg>
-);
-export default SvgLeft;
+)
+export default SvgLeft
